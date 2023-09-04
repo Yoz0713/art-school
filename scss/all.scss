@@ -1,0 +1,22 @@
+@import "_config";
+@import "_index";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+@keyframes glow {
+    0% {
+        transform: translate(0, 0);
+    }
+
+
+    100% {
+        $randomX: random(200) - 100; // 随机X轴位移值，范围在-50到50之间
+        $randomY: random(200) - 100; // 随机Y轴位移值，范围在-50到50之间
+        transform: translate(#{$randomX}px, #{$randomY}px);
+    }
+}

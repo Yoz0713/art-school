@@ -1,0 +1,663 @@
+$forthHoverTransition: 0.7s;
+
+main {
+    width: 100%;
+
+    .first-page {
+        width: 100%;
+        height: 51vw;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: pxConvertor(940);
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .second-page {
+        width: 100%;
+        overflow: hidden;
+
+        .text1 {
+            width: pxConvertor(2899.09);
+            height: auto;
+            margin: 3vw 0 4vw;
+            margin-left: 45%;
+        }
+
+        .text2 {
+            width: pxConvertor(2108.43);
+            height: auto;
+            margin: 8vw 0 4vw;
+            margin-left: -47%;
+        }
+
+
+        .content {
+            position: relative;
+            width: 62.5%;
+            margin: 0 auto;
+
+            .second-page-bg {
+                width: pxConvertor(990);
+                height: pxConvertor(494);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .second-page-para {
+                display: flex;
+                justify-content: center;
+                gap: 2.2vw;
+                padding-top: 3vw;
+                position: absolute;
+                right: -5vw;
+                bottom: -3vw;
+                z-index: 3;
+                width: pxConvertor(540);
+                height: pxConvertor(280);
+                background-color: #bb8d52;
+
+                h2 {
+                    font-family: 'Noto Sans TC', sans-serif;
+                    color: #fff;
+                }
+
+                .left {
+                    h2 {
+                        font-weight: 500;
+                        writing-mode: vertical-lr;
+                        letter-spacing: 1.45em;
+                        font-size: pxConvertor(20);
+                    }
+                }
+
+                .right {
+                    width: pxConvertor(327.9);
+
+                    h2 {
+                        font-weight: 400;
+                        line-height: 1;
+                        margin-bottom: 1.2vw;
+                        font-size: pxConvertor(16);
+                    }
+
+                    p {
+                        color: #fff;
+                        font-size: pxConvertor(18);
+                        line-height: 1.9;
+                        font-family: "Microsoft JhengHei,serif";
+                    }
+
+                    .more {
+                        margin: 0.3vw 0 0 auto;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .third-page {
+        width: 100%;
+        margin-bottom: 4vw;
+
+        .titleBox {
+            width: fit-content;
+            margin: 0 auto 4vw;
+        }
+
+        iframe {
+            display: block;
+            width: pxConvertor(1282);
+            height: pxConvertor(726);
+            object-fit: cover;
+            margin: 0 auto;
+        }
+    }
+
+    .forth-page {
+        width: 100%;
+        margin-bottom: 4vw;
+
+        .titleBox {
+            width: fit-content;
+            margin: 0 auto 4vw;
+        }
+
+        .content {
+            width: 90%;
+            margin: 0 auto;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                li {
+                    width: pxConvertor(385);
+                    cursor: pointer;
+
+                    .imgBox {
+                        width: 100%;
+                        height: pxConvertor(385);
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .paraBox {
+                        padding-top: 1.4vw;
+
+                        background-color: #fff;
+                        transition: $forthHoverTransition;
+                        padding: 1.4vw 0.8vw 0;
+
+                        .top {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 97%;
+                            margin-bottom: 0.6vw;
+
+                            .date {
+                                display: flex;
+                                align-items: center;
+                                gap: 1vw;
+
+                                img {
+                                    width: pxConvertor(14.8333);
+                                    height: auto;
+                                }
+
+                                p {
+                                    position: relative;
+                                    font-size: pxConvertor(14);
+                                    color: #3a3a3a;
+                                    font-family: 'Montserrat', sans-serif;
+                                    line-height: 0;
+
+                                    &::after {
+                                        display: block;
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        margin: auto 0;
+                                        left: -0.5vw;
+                                        width: 1px;
+                                        height: 0.7vw;
+                                        background-color: #3a3a3a;
+                                    }
+                                }
+                            }
+
+                            >span {
+                                display: block;
+                                position: relative;
+                                font-family: 'Noto Sans TC', sans-serif;
+                                font-size: pxConvertor(14);
+                                color: $gold_color;
+                                letter-spacing: 0.1em;
+                                transition: $forthHoverTransition;
+
+                                &::after,
+                                &::before {
+                                    position: absolute;
+                                    display: block;
+                                    content: "";
+                                    top: 0;
+                                    bottom: 0;
+                                    margin: auto 0;
+                                    width: 1px;
+                                    height: 0.7vw;
+                                    background-color: $gold_color;
+                                    transition: $forthHoverTransition;
+                                }
+
+                                &::after {
+                                    left: -0.5vw;
+                                }
+
+                                &::before {
+                                    right: -0.5vw;
+                                }
+                            }
+                        }
+
+                        .bottom {
+                            position: relative;
+                            padding-bottom: 0.5vw;
+
+                            h2 {
+                                font-size: pxConvertor(20);
+                                color: #3a3a3a;
+                                font-family: 'Noto Sans TC', sans-serif;
+                                font-weight: 500;
+                                letter-spacing: 0.1em;
+                                margin-bottom: 0.3vw;
+                            }
+
+                            .para {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+
+                                p {
+                                    width: 75%;
+                                    font-family: 'Noto Sans TC', sans-serif;
+                                    font-size: pxConvertor(18);
+                                    letter-spacing: 0.05em;
+                                    color: #3a3a3a;
+                                }
+
+                                .dot-area {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1vw;
+                                    padding-top: 0.3vw;
+
+                                    .dot {
+                                        width: pxConvertor(6);
+                                        height: pxConvertor(6);
+                                        background-color: $gold_color;
+                                        border-radius: 50%;
+                                        transition: $forthHoverTransition;
+                                    }
+                                }
+                            }
+
+                            .more {
+                                width: fit-content;
+                                margin: 3vw 0 0 auto;
+
+                                span {
+                                    color: $gold_color;
+                                    margin-right: 0.4vw;
+                                    transition: $forthHoverTransition;
+                                }
+
+                                svg {
+                                    display: block;
+                                    width: pxConvertor(11.877);
+                                    height: pxConvertor(11.8757);
+                                    fill: $gold_color;
+                                    transition: $forthHoverTransition;
+                                }
+                            }
+
+                            .melody {
+                                display: flex;
+                                align-items: flex-end;
+                                position: absolute;
+                                left: 0.2vw;
+                                bottom: 0;
+                                gap: 0.4vw;
+
+                                .bar {
+                                    width: pxConvertor(10);
+                                    background-color: $gold_color;
+                                    transform: scaleY(0);
+                                    transform-origin: center bottom;
+                                    transition: $forthHoverTransition;
+                                }
+
+                                .bar1 {
+                                    height: 3vw;
+                                }
+
+                                .bar2 {
+                                    height: 2vw;
+                                }
+
+                                .bar3 {
+                                    height: 1vw;
+                                }
+                            }
+
+
+                        }
+
+
+                    }
+
+                    &:hover {
+
+                        .paraBox {
+                            background-color: $gold_color;
+
+                            .top {
+                                span {
+                                    color: #fff;
+
+                                    &::after,
+                                    &::before {
+                                        background-color: #fff;
+                                    }
+                                }
+                            }
+
+                            .bottom {
+                                .melody {
+                                    .bar {
+                                        transform: scaleY(1);
+                                        background-color: #fff;
+                                    }
+                                }
+
+                                .more {
+                                    span {
+                                        color: #fff !important;
+                                    }
+
+                                    svg {
+                                        fill: #fff !important;
+                                    }
+                                }
+
+                                .para {
+                                    .dot-area {
+                                        .dot {
+                                            background-color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            display: flex;
+            width: fit-content;
+            margin: 4vw auto;
+
+            p {
+                position: relative;
+                font-size: pxConvertor(14);
+                color: #aaaaaa;
+                padding: 10px 0.7vw;
+                cursor: pointer;
+                font-family: 'Montserrat', sans-serif;
+
+                &::after {
+                    display: block;
+                    content: "";
+                    width: 50%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    bottom: 5px;
+                    height: 1px;
+                    background-color: $gold_color;
+                    transition: 0.4s;
+                    transform: scaleX(0);
+                }
+            }
+
+            .active {
+                color: $gold_color;
+
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+    .fifth-page {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        width: 100%;
+        height: pxConvertor(693);
+        margin-bottom: 7vw;
+
+        .fifth-page-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .fifth-page-para {
+            position: relative;
+            z-index: 10;
+            color: #fff;
+            margin-right: 15vw;
+
+            h2,
+            h4,
+            p {
+                text-align: center;
+            }
+
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: pxConvertor(18);
+            }
+
+            h2 {
+                margin: 1.6vw 0 1.3vw;
+                font-family: 'Noto Sans TC', sans-serif;
+                font-size: pxConvertor(22);
+                letter-spacing: 0.05em;
+            }
+
+            >p {
+                font-family: "Microsoft JhengHei,serif";
+                font-size: pxConvertor(18);
+                letter-spacing: 0.1em;
+                line-height: 2;
+                margin-bottom: 2vw;
+            }
+
+            .donate {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: pxConvertor(128.8);
+                height: pxConvertor(32);
+                margin: 0 auto;
+                background-color: #b64141;
+                border-radius: 30px;
+                cursor: pointer;
+
+                p {
+                    font-size: pxConvertor(14);
+                    font-family: 'Noto Sans TC', sans-serif;
+                    color: #fff;
+                    letter-spacing: 0.1em;
+
+                }
+            }
+        }
+    }
+
+    .sixth-page {
+        margin-bottom: 8vw;
+
+        .titleBox {
+            width: fit-content;
+            margin: 0 auto 4vw;
+        }
+
+        .partnerBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: pxConvertor(1320);
+            margin: 0 auto;
+
+            img {
+                height: pxConvertor(85);
+                width: auto;
+            }
+        }
+    }
+
+    .seventh-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: pxConvertor(1720);
+        height: pxConvertor(500);
+        margin: 0 auto 4vw;
+        background-color: #eeeeee;
+
+        .titleBox {
+            width: fit-content;
+            margin: 0 auto 2vw;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            >input {
+                width: pxConvertor(300);
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #cccccc;
+                padding: 0 3px 5px 3px;
+                font-size: pxConvertor(14);
+                letter-spacing: 0.05em;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #3a3a3a;
+                    font-size: pxConvertor(14);
+                    letter-spacing: 0.05em;
+                }
+            }
+
+            .agree {
+                margin: 1.5vw 0;
+
+                span {
+                    font-size: pxConvertor(14);
+                    font-family: "Microsoft JhengHei,serif";
+                    color: #3a3a3a;
+
+                }
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: pxConvertor(128.8);
+                height: pxConvertor(32);
+                margin: 0 auto;
+                background-color: #b64141;
+                border-radius: 30px;
+                cursor: pointer;
+                font-size: pxConvertor(14);
+                font-family: 'Noto Sans TC', sans-serif;
+                color: #fff;
+                letter-spacing: 0.1em;
+                border: none;
+            }
+        }
+    }
+
+    .community {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: 2vw;
+        z-index: 10;
+        pointer-events: none;
+
+        li {
+            a {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                padding: 0.4vw;
+                border-radius: 50%;
+                border: 1px solid $gold_color;
+                transition: 0.3s;
+                overflow: hidden;
+                pointer-events: auto;
+                background-color: #fff;
+
+                img {
+                    width: pxConvertor(26);
+                    height: pxConvertor(26);
+                    transition: 0.3s;
+                }
+
+                .white {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    top: 100%;
+                }
+
+                &:hover {
+                    background-color: #c79f62;
+
+                    .white {
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    .gold {
+                        transform: translateY(-150%);
+                    }
+                }
+            }
+        }
+    }
+}
